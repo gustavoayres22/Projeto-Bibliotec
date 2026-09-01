@@ -1,0 +1,102 @@
+/*      CABECALHO       */
+
+a {
+    color: var(--branco);
+    text-decoration: none;
+
+}
+
+.cabecalho {
+    background-color: var(--azul-escuro);
+
+    display: flex;
+    /* flex-direction: row;*/
+    /* por padrão o flex vem na direção row/linha*/
+
+    /*       alinha no sentido fo flex       */
+    justify-content: space-between;
+
+    /*alinha no sentido contrário do flex*/
+    align-items: center;
+
+    padding: 0 120px;
+    height: 10vh;
+    /* 10% da visão do navegador*/
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.navegacao a {
+    text-transform: uppercase;
+
+    /* 1rem -> equivale a 16 px(ádrão da raiz HTML) */
+    /* em -> pega o tamanho da tipografia do elemento pai*/
+    font-size: 1em;
+    font-weight: 500;
+}
+
+    /* CONTEUDO PRINCIPAL */
+        /* Primeiro banner */
+.banner-principal {
+    color: var(--branco);
+
+    height: 70vh;
+
+    background-image: url(../imgs/banner-principal-home.png);
+    background-size: cover;
+/* backgroud-repeat: no repeat */
+
+/* overflow: hidden; evita que os elementos transbordem */
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 0 120px;
+
+}
+
+.texto-banner {
+
+    height:100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    gap:50px;
+}
+
+.texto-banner p {
+    font-size: 1, 5em;
+    width:50%;
+}
+
+.botao {
+    padding: 20px 50px;
+
+    border-radius: 10px;
+
+    background-color: var(--cor-destaque);
+    color: var(--azul-escuro);
+
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.botao:hover {
+    background-color: #2ab2ab;
+    color: var(--branco);
+}
+
+.banner-principal img {
+    align-self: flex-end;
+    width:35%;
+}
