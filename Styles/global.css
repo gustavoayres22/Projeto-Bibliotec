@@ -13,6 +13,7 @@
     --texto: #26333D;
     --branco: #FFF;
     --cor-destaque: #2FD6CB;
+    --fundos: #E9F0EF;
 
 
 }
@@ -21,4 +22,8 @@ body {
      font-family: "Montserrat", sans-serif;
      background-color: var(--branco);
      color: var(--texto);
+}
+
+HTML {
+    scroll-behavior: smooth;
 }
