@@ -1,33 +1,18 @@
-// console.log("hello world")
+// console.log("Hello World!");
+// alert("Hello World!");
 
-// alert("hello world")
+// var nome = "marcos" NÂO VAMOS USAR NUNCAAAAAAAAAA 
 
-// var nome = "GUGU"  !NÃO VAMOS USAR
-
-// let nome = " GUGU" !NÃO VAMOS USAR
-
-// const nome = "GUGU";
-
-// nome = "joribe";
-
-// const nome = "GUGU"
-// console.log(nome)
-
-// nome = "joribe"
-// console.log(nome)
-
-const campoSenha = document.getElementById ("senha");
+const campoSenha = document.getElementById("senha");
 const btnSenha = document.querySelector("#mostrar-senha");
 
+btnSenha.addEventListener("click", function() {
+    
+    campoSenha.type = campoSenha.type == "password" ? "text" : "password";
 
-btnSenha.addEventListener("click", function(e) {
-
-    //if(campoSenha.type == "password") {
-    // campoSenha.type = "text";
-    //}
-    //else {
-    // campoSenha.type = "password"
-    //}
-    campoSenha.type = campoSenha.type == "password" ? 
-
+    // if(campoSenha.type == "password") {
+    //     campoSenha.type = "text";
+    // } else {
+    //     campoSenha.type = "password";
+    // }
 })

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliotec - Gestão de bibliotecas</title>
+    <title>Bibliotec - Gestão de Bibliotecas</title>
+    <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="../imgs/Icone - Bibliotec.png" type="image/x-icon">
-    <link rel="stylesheet" href="../Styles/global.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 <body>
-
     <header class="cabecalho">
         <a href="#">
-            <img src="../imgs/Logo Horizontal - branca.svg" alt="Logo do sistema Bibliotec">
+            <img src="../imgs/Logo Horizontal - branca.svg" alt="Logo do sistema Bibliotec.">
         </a>
 
         <nav class="navegacao">
@@ -22,17 +21,25 @@
             <a href="#acervo">Nosso acervo</a>
             <a href="#acesso">Login</a>
         </nav>
+
+        <!-- RESPONSIVIDADE -->
+        <button class="botao-menu" id="menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
     <main>
         <section class="banner-principal">
+
             <div class="texto-banner">
                 <h1>Bem-vindo(a) ao Bibliotec</h1>
-                <p>O melhor gerenciador para Bibliotec de maneira moderna e automatizada!</p>
-                <a href=""class="botao">Acessar</a>
+                <p>O melhor gerenciador para biblioteca de maneira moderna e automatizada!</p>
+                <a href="" class="botao">Acessar</a>
             </div>
 
-            <img src="../imgs/img-mulher.png" alt="imagem de uma mulher segurando uma revista">
+            <img src="../imgs/img-mulher.png" alt="Imagem de uma mulher segurando uma revista.">
+
         </section>
+
         <section class="beneficios" id="quem-somos">
             <div class="titulo-secao">
                 <h2>Por que usar a Bibliotec?</h2>
@@ -65,56 +72,113 @@
                 </article>
             </div>
         </section>
-    </main>
 
-    <main>
-          <section class="banner-meio" id="acesso">
+        <section class="banner-meio" id="acesso">
             <div class="texto-banner">
-                <h2>Acesso a nossa plataforma</h2>
+                <h2>Acesse a nossa plataforma</h2>
                 <p>Faça o login ou solicite cadastro para a bibliotecária.</p>
-                <a href="" class="botao">Acessar</a>
+                <a href="../login/login.html" class="botao">Acessar</a>
             </div>
         </section>
 
-        <section class="livros-recomendados">
-            <div class="titulo-secao-livros">
+        <section class="acervo" id="acervo">
+            <div class="titulo-secao">
                 <h2>Top livros recomendados</h2>
                 <span></span>
             </div>
 
-            <div>
-            <div class="lista-livros">
             <div class="livros">
-                <img src="../imgs/livro-aescoladobememal.svg" alt="livro escola do bem e do mal">
-                <h4>ESCOLA DO BEM E DO MAL</h4>
-                <p>Autor(a): </p>
-                <p>Soman Chainani</p>
-            </div>
-            <div class="livros">
-                <img src="../imgs/livro-filhasdalua.svg" alt="livro filhas da lua">
-                <h4>FILHAS DA LUA</h4>
-                <p>Autor(a): </p>
-                <p>Carolina França</p>
-            </div>
-            <div class="livros">    
-                <img src="../imgs/livro-ti.svg" alt="livro ti para negócios">
-                <h4>TI PARA NEGÓCIOS</h4>
-               <p>Autor(a): </p>
-               <p>Edson Perin</p>
-            </div>
-            <div class="livros">
-                <img src="../imgs/livro-mestredotempo.svg" alt="livro mestres do tempo">
-                <h4>MESTRES DO TEMPO</h4>
-                <p>Autor(a): </p>
-                <p>R.V.CAMPELI</p>
-            <div>
+
+                <article class="livro">
+                    <img src="../imgs/livro-aescoladobememal.svg" alt="">
+                    <h3>A escola do bem e do mal</h3>
+
+                    <div class="livro-texto">
+                        <h4>Autor(a):</h4>
+                        <p>Soman Chainani</p>
+                    </div>
+                </article>
+
+                <article class="livro">
+                    <img src="../imgs/livro-filhasdalua.svg" alt="">
+                    <h3>Filhas da Lua</h3>
+
+                    <div class="livro-texto">
+                        <h4>Autor(a):</h4>
+                        <p>Carolina França</p>
+                    </div>
+                </article> 
+
+                <article class="livro">
+                    <img src="../imgs/livro-ti.svg" alt="">
+                    <h3>TI para Negócios</h3>
+
+                    <div class="livro-texto">
+                        <h4>Autor(a):</h4>
+                        <p>Edson Perin</p>
+                    </div>
+                </article>
+
+                <article class="livro">
+                    <img src="../imgs/livro-mestredotempo.svg" alt="">
+                    <h3>Mestres do Tempo</h3>
+
+                    <div class="livro-texto">
+                        <h4>Autor(a):</h4>
+                        <p>R.V. Campbell</p>
+                    </div>
+                </article>
+
             </div>
         </section>
-
-
-
-
     </main>
-</body>
 
+    <!-- FOOTER DESENVOLVIDO PELOS ALUNOS -->
+    <footer>
+      <section class="main">
+        <div class="rodape-logos">
+          <img src="../imgs/Logo Horizontal - branca.svg" alt="Bibliotec" />
+          <img src="../imgs/SENAI_São_Paulo_logo 1.svg" alt="SENAI" />
+        </div>
+
+        <div class="rodape-informacoes">
+          <nav class="nav-footer">
+            <p>Biblioteca</p>
+            <a href="#">Baixar aplicativos</a>
+            <a href="#">Suporte ao usuário</a>
+          </nav>
+          <nav class="nav-footer">
+            <p>Quem somos</p>
+            <a href="# ">Clientes</a>
+            <a href="#">Benefícios</a>
+          </nav>
+          <p>Siga nas redes sociais</p>
+          <nav class="rodape-icones">
+            <a href="#facebook">
+              <img src="../imgs/icone-facebook.svg" alt=" Icone do Facebook" />
+            </a>
+            <a href="#instagram">
+              <img src="../imgs/icone-instagram.svg" alt="Icone do Instagram" />
+            </a>
+            <a href="#linkedin">
+              <img src="../imgs/icone-linkedin.svg" alt="Linkedin" />
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <span></span>
+
+      <section class="footer-inferior">
+        <p>&copy; Biblio Tec</p>
+        <nav class="footer">
+          <a href="#">Acessibilidade</a>
+          <a href="#">Politica de Privacidade</a>
+          <a href="#">Termos e condições</a>
+        </nav>
+      </section>
+    </footer>
+
+    <script src="../home/home.js"></script>
+</body>
 </html>
